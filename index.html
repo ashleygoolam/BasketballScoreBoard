@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2 class="title">Basketball Score Board</h2>
+    <div class="container">
+      <div class="board home">
+        <h1>HOME</h1>
+        <p class="score" id="h-score">0</p>
+        <div class="btn-group">
+          <div class="two-btns">
+            <button class="btn" onclick="reset()">Reset</button>
+            <button class="btn" id="h-prev" onclick="previous()">Previous</button>
+          </div>
+          <div class="two-btns">
+            <button class="btn" id="h-less" onclick="subtract1()">-1</button>
+            <button class="btn" id="h-plus1" onclick="add1()">+1</button>
+          </div>
+          <div class="two-btns">
+            <button class="btn" id="h-plus2" onclick="add2()">+2</button>
+            <button class="btn" id="h-plus3" onclick="add3()">+3</button>
+          </div>
+        </div>
+      </div>
+      <div class="board guest">
+        <h1>GUEST</h1>
+        <p class="score" id="g-score">0</p>
+        <div class="btn-group">
+          <div class="two-btns">
+            <button class="btn" onclick="resets()">Reset</button>
+            <button class="btn" id="g-prev" onclick="previous2()">Previous</button>
+          </div>
+          <div class="two-btns">
+            <button class="btn" id="h-less" onclick="subtracts1()">-1</button>
+            <button class="btn" id="h-plus1" onclick="adds1()">+1</button>
+          </div>
+          <div class="two-btns">
+            <button class="btn" id="h-plus2" onclick="adds2()">+2</button>
+            <button class="btn" id="h-plus3" onclick="adds3()">+3</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="new.js"></script>
+  </body>
+</html>
